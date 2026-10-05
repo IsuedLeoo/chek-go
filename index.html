@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="refresh" content="0;url=https://beauty-survive-metals-hart.trycloudflare.com/" />
+  <title>Chek</title>
+  <script>
+    fetch('current.json', { cache: 'no-store' })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (d && d.url) location.replace(d.url.replace(/\/?$/, '/') );
+        else location.replace('https://beauty-survive-metals-hart.trycloudflare.com/');
+      })
+      .catch(function () {
+        location.replace('https://beauty-survive-metals-hart.trycloudflare.com/');
+      });
+  </script>
+</head>
+<body>
+  <p>Opening <a href="https://beauty-survive-metals-hart.trycloudflare.com/">Chek</a>…</p>
+</body>
+</html>
